@@ -5,7 +5,7 @@ coreos:
   etcd2:
     # generate a new token for each unique cluster from https://discovery.etcd.io/new?size=3
     # discovery: "https://discovery.etcd.io/new?size=3"
-    discovery: https://discovery.etcd.io/b6b03076994e314a194ad19f13adb9be
+    discovery: https://discovery.etcd.io/8e63b12b8ce33cdb8550016331746622
     # multi-region and multi-cloud deployments need to use $public_ipv4
     advertise-client-urls: "http://$public_ipv4:2379"
     initial-advertise-peer-urls: "http://$private_ipv4:2380"
@@ -25,7 +25,7 @@ coreos:
       command: "start"
 
 users:
-  - name: coreos1Jenkins
+  - name: venkatesh
     groups:
       - sudo
       - docker
